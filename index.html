@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Aura Hotspot</title>
+
+  <link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/signin.css">
+  <script src="bootstrap.bundle.min.js"></script>
+
+  <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      body {
+          background: url('img/bg.jpg') no-repeat center center fixed;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+      }
+    </style>
+</head>
+<body class="text-center">
+	<div class="container">
+	  <div class="row align-items-center">
+    
+      <!-- form login -->
+	    <div class="col-lg-6">
+
+        <!--$(if chap-id)-->
+
+	      <form name="sendin" action="$(link-login-only)" method="post">
+          <input type="hidden" name="username" />
+          <input type="hidden" name="password" />
+          <input type="hidden" name="dst" value="$(link-orig)" />
+          <input type="hidden" name="popup" value="true" />
+          </form>
+          <script type="text/javascript" src="/md5.js"></script>
+            <script type="text/javascript">
+            <!--
+                function doLogin() {
+                  document.sendin.username.value = document.login.username.value;
+                  document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
+                  document.sendin.submit();
+                  return false;
+                }
+            //-->
+            </script>
+
+
+          <!--$(endif)-->
+
+        <h2 class="text-success"><i><b>WIFI LANGGANAN</b></i></h2>
+        <form class="form-signin" role="form" name="login" action="$(link-login-only)" method="post" $(if chap-id) onSubmit="return doLogin()" $(endif)>
+          <input type="hidden" name="dst" value="$(link-orig)" />
+          <input type="hidden" name="popup" value="true" />
+
+          <img class="mb-4" src="img/router.svg" alt="" width="72" height="57">
+          <h1 class="h5 mb-3 fw-normal"><b>Masukkan Kode Voucher</b></h1>
+          <!-- input username -->
+          <div class="form-floating">
+            <input class="form-control" id="floatingInput" name="username" type="username" value="" class="username" placeholder="User" required="" autofocus="" style=" border-radius: 10px;">
+            <label for="floatingInput">Username</label>
+          </div>
+          <!-- input password -->
+          <div class="form-floating">
+            <input class="form-control" id="floatingPassword" type="password" name="password" class="password" placeholder="Password" style="border-radius: 10px;">
+            <label for="floatingPassword">Password</label>
+          </div>
+          <!-- button sign in -->
+          <!--$(if error)<div class="box-error"><div class="tx-error">$(error)</div></div>$(endif)-->
+          <button class="w-100 btn btn-lg btn-success" type="submit">Sign in</button>
+          <!--$(if trial == 'yes')<br><a button class="btn btn-lg btn-danger btn-block" type="button" href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)">Coba Gratis</button></a>$(endif)-->
+          <!-- copyraight -->
+          <!--<p class="mt-5 mb-3 text-primary">&copy; 2022</p>-->
+        </form>
+	    </div>
+
+      <!-- carousel -->
+	    <div class="col-lg-6">
+	      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner" style="border-radius: 50px;">
+            <div class="carousel-item active">
+              <img src="img/a.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/aa.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/aaa.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+	    </div>
+	  </div>
+	</div>
+</body>
+</html>

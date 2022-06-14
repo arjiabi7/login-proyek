@@ -1,0 +1,144 @@
+body {
+font-family: Arial;
+background-color: #3498DB;
+padding:0px;
+}
+.badan {
+margin:auto;
+padding-left:10px;
+padding-right:10px;
+width: 400px;
+}
+.badan-layar {
+margin-top:30%;
+background-color: #FFF;
+padding: 20px;
+border-radius: 5px
+}
+.bd-error {
+background-color: #ff3333;
+}
+
+.titel {
+text-align: center;
+color: #777;
+}
+H1, H2, H3, H4 {
+margin-bottom: 3px;
+margin-top: 2px;
+text-transform:uppercase;
+}
+.titel-dua {
+  color: #444;
+  display: block;
+  margin-top: 0px;
+  margin-bottom: 15px;
+  text-decoration: none;
+  color: #444;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.box {
+	text-align:center;
+	margin-top: 18px;
+	margin-bottom: 2px;
+}
+
+.btn-log {
+  border: 2px solid transparent;
+  background: #3498DB;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 10px;
+  padding: 10px 0;
+  text-decoration: none;
+  text-shadow: none;
+  text-align:center;
+  border-radius: 3px;
+  box-shadow: none;
+  transition: 0.25s;
+  display: inline-block;
+  width: 150px;
+  margin: 0 auto;
+}
+
+.btn-free {
+  border: 2px solid transparent;
+  background: #d43f3a;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 10px;
+  padding: 10px 0;
+  text-decoration: none;
+  text-shadow: none;
+  text-align:center;
+  border-radius: 3px;
+  box-shadow: none;
+  transition: 0.25s;
+  display: inline-block;
+  width: 150px;
+  margin: 0 auto;
+}
+
+.btn-load {
+  border: 2px solid transparent;
+  background: #379037;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 10px;
+  padding: 10px 0;
+  text-decoration: none;
+  text-shadow: none;
+  text-align:center;
+  border-radius: 3px;
+  box-shadow: none;
+  transition: 0.25s;
+  display: inline-block;
+  width: 308px;
+  margin: 0 auto;
+}
+
+.btn-log:hover {
+  background-color: #2980B9;
+}
+.btn-free:hover {
+  background-color: #cc3333;
+}
+
+.btn-load:hover {
+  background-color: #268126;
+}
+
+.link {
+  color: #444;
+  display: block;
+  margin-top: 0px;
+  margin-bottom: 15px;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: none;
+  color:#2980B9;
+}
+
+table {
+	width:100%;
+	border-radius:5px;
+}
+table, th, td {
+	border:1px solid #CCC;
+	border-collapse:collapse;
+	color: #444;
+	font-size: 16px;
+	text-transform:capitalize;
+}
+th, td {
+    padding: 6px;
+}
+.td-kanan {
+	text-align:right;
+}
+.td-kiri {
+	text-align:left;
+}
